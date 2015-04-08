@@ -28,6 +28,7 @@ gem 'turbolinks'
 gem 'rack-mini-profiler'
 # Use slim for template
 gem 'slim'
+gem 'devise'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

@@ -9,6 +9,6 @@ div class="row border-bottom"
           input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search" 
 
     ul class="nav navbar-top-links navbar-right" 
-      li: a[href="#"]
-        i class="fa fa-sign-out" log out
-        
+      li 
+        - if user_signed_in?
+          == button_to "log out", destroy_user_session_path, :method => :delete
