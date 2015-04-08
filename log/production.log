@@ -1,1 +1,23 @@
 
+I, [2015-04-08T10:00:28.564335 #22401]  INFO -- : Started GET "/" for 10.0.80.46 at 2015-04-08 10:00:28 -0400
+I, [2015-04-08T10:00:28.701824 #22401]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-04-08T10:00:28.717332 #22401]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.9ms)
+I, [2015-04-08T10:00:40.733464 #22401]  INFO -- :   Rendered layouts/_navigation.html.erb (2.7ms)
+I, [2015-04-08T10:00:40.735869 #22401]  INFO -- :   Rendered layouts/_topnavbar.html.erb (0.7ms)
+I, [2015-04-08T10:00:40.738144 #22401]  INFO -- :   Rendered layouts/_footer.html.erb (0.5ms)
+I, [2015-04-08T10:00:40.740562 #22401]  INFO -- : Completed 200 OK in 12037ms (Views: 12025.2ms | ActiveRecord: 0.0ms)
+I, [2015-04-08T10:00:40.955761 #22401]  INFO -- : Started GET "/assets/application-6d575b02d059a4f290213a0429a7d6c1.js" for 10.0.80.46 at 2015-04-08 10:00:40 -0400
+I, [2015-04-08T10:00:41.044809 #22401]  INFO -- : Started GET "/assets/application-b08ec02411a40900e3b685858b0b6a99.css" for 10.0.80.46 at 2015-04-08 10:00:41 -0400
+I, [2015-04-08T10:00:41.278137 #22401]  INFO -- : Started GET "/assets/patterns/header-profile-0b04c35be938b6895da24b3a3f3bcd5a.png" for 10.0.80.46 at 2015-04-08 10:00:41 -0400
+I, [2015-04-08T10:00:41.303770 #22401]  INFO -- : Started GET "/assets/fontawesome-webfont-cad63a695a960a0786c6889d21ce1744.woff?v=4.2.0" for 10.0.80.46 at 2015-04-08 10:00:41 -0400
+I, [2015-04-08T10:00:44.103410 #22401]  INFO -- : Started GET "/" for 10.0.80.46 at 2015-04-08 10:00:44 -0400
+I, [2015-04-08T10:00:44.107144 #22401]  INFO -- : Processing by HomeController#index as HTML
+I, [2015-04-08T10:00:44.110381 #22401]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.1ms)
+I, [2015-04-08T10:00:44.116280 #22401]  INFO -- :   Rendered layouts/_navigation.html.erb (0.3ms)
+I, [2015-04-08T10:00:44.118847 #22401]  INFO -- :   Rendered layouts/_topnavbar.html.erb (0.3ms)
+I, [2015-04-08T10:00:44.121227 #22401]  INFO -- :   Rendered layouts/_footer.html.erb (0.1ms)
+I, [2015-04-08T10:00:44.123211 #22401]  INFO -- : Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+I, [2015-04-08T10:00:44.346792 #22401]  INFO -- : Started GET "/assets/application-6d575b02d059a4f290213a0429a7d6c1.js" for 10.0.80.46 at 2015-04-08 10:00:44 -0400
+I, [2015-04-08T10:00:44.354007 #22401]  INFO -- : Started GET "/assets/application-b08ec02411a40900e3b685858b0b6a99.css" for 10.0.80.46 at 2015-04-08 10:00:44 -0400
+I, [2015-04-08T10:00:44.538737 #22401]  INFO -- : Started GET "/assets/patterns/header-profile-0b04c35be938b6895da24b3a3f3bcd5a.png" for 10.0.80.46 at 2015-04-08 10:00:44 -0400
+I, [2015-04-08T10:00:44.549021 #22401]  INFO -- : Started GET "/assets/fontawesome-webfont-cad63a695a960a0786c6889d21ce1744.woff?v=4.2.0" for 10.0.80.46 at 2015-04-08 10:00:44 -0400

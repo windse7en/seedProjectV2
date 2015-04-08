@@ -23,6 +23,13 @@ gem 'coffee-rails', '~> 4.0.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
+
+# Test Performance Added by Tao Zhang For Testing
+gem 'rack-mini-profiler'
+# Use slim for template
+gem 'slim'
+
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
