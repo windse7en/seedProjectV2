@@ -1,0 +1,27 @@
+.passwordBox.animated.fadeInDown
+  .row
+    .col-md-12
+      .ibox-content
+        h2.font-bold
+          | Forgot password
+        p
+          | Change your password
+        .row
+          .col-lg-12
+            = form_for(resource, as: resource_name, url: password_path(resource_name), class:"m-t", role:"form", html: { method: :put }) do |f|
+              = devise_error_messages!
+              = f.hidden_field :reset_password_token
+              .form-group
+                = f.password_field :password, autofocus: "off", class:"form-control", placeholder:"New password"
+              .form-group
+                = f.password_field :password_confirmation, autofocus: "off", class:"form-control", placeholder:"Confirm new password"
+              .actions
+                = f.submit "Change my password", class:"btn btn-primary block full-width m-b"
+        .row.text-right
+          = render "devise/shared/links"
+  .row
+    .col-md-6
+      |  Copyright Example Company 
+    .col-md-6.text-right
+      small
+        | © 2014-2015

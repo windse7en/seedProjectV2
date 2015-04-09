@@ -1,0 +1,24 @@
+.passwordBox.animated.fadeInDown
+  .row
+    .col-md-12
+      .ibox-content
+        h2.font-bold
+          | Forgot password
+        p
+          |  Enter your email address and your password will be reset and emailed to you. 
+        .row
+          .col-lg-12
+            = form_for(resource, as: resource_name, url: password_path(resource_name), html: {  class:"m-t", role:"form", method: :post }) do |f|
+              = devise_error_messages!
+              .form-group
+                = f.email_field :email, autofocus: true, class:"form-control", placeholder:"Email address"
+              .actions
+                = f.submit "Send me reset password instructions", class:"btn btn-primary block full-width m-b"
+        .row.text-right
+          = render "devise/shared/links"
+  .row
+    .col-md-6
+      |  Copyright Example Company 
+    .col-md-6.text-right
+      small
+        | © 2014-2015
