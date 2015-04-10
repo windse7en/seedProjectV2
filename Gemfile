@@ -30,6 +30,16 @@ gem 'rack-mini-profiler'
 gem 'slim'
 gem 'html2slim'
 gem 'devise'
+# test for rails
+gem 'rspec-rails', :group => [:test, :development]
+group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'cucumber-rails', :require => false
+  # database cleaner not required but highly recommended
+  gem 'database_cleaner'
+end
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

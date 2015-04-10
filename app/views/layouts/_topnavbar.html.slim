@@ -8,7 +8,9 @@ div class="row border-bottom"
         div class="form-group"
           input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search" 
 
-    ul class="nav navbar-top-links navbar-right" 
-      li 
-        - if user_signed_in?
-          == button_to "log out", destroy_user_session_path, :method => :delete
+    ul class="nav navbar-top-links navbar-right" style="padding-top:17px"
+      - if user_signed_in?
+        li 
+          == button_to "Edit", edit_user_registration_path, :method => :get, :class => "form-control", :style => "border:0"
+        li
+          == button_to "Log out", destroy_user_session_path, :method => :delete, :class => "form-control", :style => "border:0"
