@@ -32,6 +32,12 @@ gem 'html2slim'
 gem 'devise'
 # test for rails
 gem 'rspec-rails', :group => [:test, :development]
+
+group :development do
+  gem 'guard'
+  gem 'guard-livereload', '~> 2.4', require: false
+end
+
 group :test do
   gem 'factory_girl_rails'
   gem 'capybara'
