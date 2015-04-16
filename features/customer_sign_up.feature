@@ -4,7 +4,7 @@ Feature: customer sign up
     So that I can login in to it
     Scenario: sign up
         Given I am not signed up before
-        When I sign up the website
-        Then the website should say "Sign Up"
-        And the website should say "Email"
-        And the website should say "Password"
+        When I visit sign up the website
+        Then I should see "Register"
+        And I should see "user_email" input
+        And I should see "user_password" input
