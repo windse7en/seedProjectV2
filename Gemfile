@@ -36,6 +36,9 @@ gem 'rspec-rails', :group => [:test, :development]
 group :development do
   gem 'guard'
   gem 'guard-livereload', '~> 2.4', require: false
+  gem 'guard-cucumber'
+  # parallel test can improve speed some slow tests"
+  gem 'parallel_tests'
 end
 
 group :test do
