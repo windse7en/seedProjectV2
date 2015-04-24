@@ -1,22 +1,37 @@
-div class="middle-box text-center loginscreen  animated fadeInDown"
-  div
-    div: h1 class="logo-name" IN+
 
-    h3 Welcome to +
-    p Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
-    p Login in. To see it in action.
+div class="row"
+  div class="col-md-5" id="health_index_line_chart"
+    p
+      | testlkasjf 
+  
+  div class="col-md-7"
+    div class="middle-box text-center loginscreen  animated fadeInDown "
+      div
+        div: h1 class="logo-name" IN+
 
-    == form_for(resource, as: resource_name, url: session_path(resource_name), class: "m-t", role: "form") do |f|
-      div class="form-group"
-        == f.email_field :email, autofocus: true, placeholder:"Username", class: "form-control"
-        /input type="email" class="form-control" placeholder="Username" required=""
-      div class="form-group"
-        == f.password_field :password, autofocus: "off", placeholder:"Password", class: "form-control"
-        /input type="password" class="form-control" placeholder="Password" required=""
-      button type="submit" class="btn btn-primary block full-width m-b" Login
-      
-      == render "devise/shared/links"
-    
-    p class="m-t"
-      small we app framework base on Bootstrap 3 &copy; 2015
+      h3 Welcome to Cusomer Health Index
+      p Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
+      p Login in. To see it in action.
 
+      == form_for(resource, as: resource_name, url: session_path(resource_name), class: "m-t", role: "form") do |f|
+        div class="form-group"
+          == f.email_field :email, autofocus: true, placeholder:"Username", class: "form-control"
+          /input type="email" class="form-control" placeholder="Username" required=""
+        div class="form-group"
+          == f.password_field :password, autofocus: "off", placeholder:"Password", class: "form-control"
+          /input type="password" class="form-control" placeholder="Password" required=""
+        button type="submit" class="btn btn-primary block full-width m-b" Login
+
+        == render "devise/shared/links"
+
+      p class="m-t"
+        small we app framework base on Bootstrap 3 &copy; 2015
+
+
+div class="row"
+  div class="col-md-4"
+    h1 I am A
+  div class="col-md-4"
+    h1 I am B
+  div class="col-md-4"
+    h1 I am C

@@ -59724,3 +59724,3320 @@ Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 
 
 
 Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-23 16:24:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 11:43:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 30ms
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 11:43:21 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (8.6ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (136.5ms)
+Completed 200 OK in 5339ms (Views: 5315.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 11:43:27 -0400
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started POST "/users/sign_in" for 10.0.80.58 at 2015-04-24 11:44:03 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9GsCSb7oSpSCphCqPdXPxJmG9UxIIHZZW+1FtbfPeVs=", "user"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'a@a.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (14.8ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Tue, 21 Apr 2015 19:23:27 UTC +00:00], ["current_sign_in_at", Fri, 24 Apr 2015 15:44:03 UTC +00:00], ["sign_in_count", 18], ["updated_at", Fri, 24 Apr 2015 15:44:03 UTC +00:00]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://10.0.80.77:3000/
+Completed 302 Found in 247ms (ActiveRecord: 21.8ms)
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 11:44:03 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.slim within layouts/application (10.1ms)
+  Rendered layouts/_navigation.html.slim (20.6ms)
+  Rendered layouts/_topnavbar.html.slim (26.6ms)
+  Rendered layouts/_footer.html.slim (7.1ms)
+Completed 200 OK in 141ms (Views: 129.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:04 -0400
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 10.0.80.58 at 2015-04-24 11:44:05 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.58 at 2015-04-24 11:44:05 -0400
+
+
+Started GET "/home/minor" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+Processing by HomeController#minor as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/minor.html.slim within layouts/application (8.2ms)
+  Rendered layouts/_navigation.html.slim (0.5ms)
+  Rendered layouts/_topnavbar.html.slim (0.7ms)
+  Rendered layouts/_footer.html.slim (10.0ms)
+Completed 200 OK in 66ms (Views: 53.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:14 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.58 at 2015-04-24 11:44:15 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:26 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:26 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 11:44:26 -0400
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 11:44:51 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.slim within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.slim (6.4ms)
+  Rendered layouts/_topnavbar.html.slim (1.6ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 91ms (Views: 85.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 11:45:54 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 11:45:54 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 11:45:54 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 11:45:54 -0400
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 11:46:53 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.slim within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.9ms)
+  Rendered layouts/_topnavbar.html.slim (2.8ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 94ms (Views: 86.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 11:46:53 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 11:46:53 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 11:46:53 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.58 at 2015-04-24 11:46:54 -0400
+
+
+Started GET "/home/minor" for 10.0.80.58 at 2015-04-24 11:47:36 -0400
+Processing by HomeController#minor as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/minor.html.slim within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.6ms)
+  Rendered layouts/_topnavbar.html.slim (1.1ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 74ms (Views: 52.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 11:47:36 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 11:47:36 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 11:47:36 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 11:47:36 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:36 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.58 at 2015-04-24 11:47:37 -0400
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 11:47:56 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.slim within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.slim (0.3ms)
+  Rendered layouts/_topnavbar.html.slim (2.0ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 82ms (Views: 78.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.58 at 2015-04-24 11:47:57 -0400
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 14:12:44 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (1.1ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (5.3ms)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:45 -0400
+
+
+Started POST "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:12:57 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yCdznRLjub5LDJsPEzuKJWW6DPC0AsAlPpqpxodp36g=", "user"=>{"email"=>"a@a.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (3.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'a@a.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["last_sign_in_at", Fri, 24 Apr 2015 15:44:03 UTC +00:00], ["current_sign_in_at", Fri, 24 Apr 2015 18:12:57 UTC +00:00], ["sign_in_count", 19], ["updated_at", Fri, 24 Apr 2015 18:12:57 UTC +00:00]]
+  [1m[36m (6.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://10.0.80.77:3000/
+Completed 302 Found in 159ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.slim within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.slim (0.5ms)
+  Rendered layouts/_topnavbar.html.slim (0.8ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:12:58 -0400
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 10.0.80.58 at 2015-04-24 14:12:59 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.58 at 2015-04-24 14:12:59 -0400
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 14:18:20 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.slim within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.slim (0.6ms)
+  Rendered layouts/_topnavbar.html.slim (1.5ms)
+  Rendered layouts/_footer.html.slim (0.3ms)
+Completed 200 OK in 45ms (Views: 37.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.58 at 2015-04-24 14:18:21 -0400
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 14:20:26 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/index.html.slim within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.slim (1.3ms)
+  Rendered layouts/_topnavbar.html.slim (0.7ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 10.0.80.58 at 2015-04-24 14:20:27 -0400
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 14:30:26 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/index.html.slim within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.slim (9.3ms)
+  Rendered layouts/_topnavbar.html.slim (6.4ms)
+  Rendered layouts/_footer.html.slim (0.3ms)
+Completed 200 OK in 96ms (Views: 88.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.58 at 2015-04-24 14:30:27 -0400
+
+
+Started DELETE "/users/sign_out" for 10.0.80.58 at 2015-04-24 14:30:29 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t8E8wkLoBxEi41tlhx6Rd+TYHET6HILWxwsC5xH5JLQ="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to http://10.0.80.77:3000/
+Completed 302 Found in 27ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 14:30:29 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:30:29 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (2.1ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (6.3ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:30:30 -0400
+
+
+Started GET "/users/sign_" for 10.0.80.58 at 2015-04-24 14:30:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.1ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.2ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (85.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:37:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (13.1ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (142.6ms)
+Completed 200 OK in 913ms (Views: 808.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:33 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:37:34 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:45:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (2.1ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (30.4ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:45:01 -0400
+
+
+Started GET "/" for 10.0.80.58 at 2015-04-24 14:48:12 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:48:12 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (1.6ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (15.6ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:13 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:48:34 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (1.2ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (70.6ms)
+Completed 200 OK in 137ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:34 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:35 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (0.7ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (45.9ms)
+Completed 200 OK in 119ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:38 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:39 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:39 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:39 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:39 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:39 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:39 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:48:39 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (9.7ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (82.4ms)
+Completed 200 OK in 142ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:49:03 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:51:08 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (0.7ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (30.6ms)
+Completed 200 OK in 97ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:09 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:51:44 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (1.5ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (36.7ms)
+Completed 200 OK in 92ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:51:44 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:51:44 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:51:44 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:51:45 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:53:26 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (1.4ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (40.6ms)
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:53:27 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 14:54:34 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (0.7ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (32.7ms)
+Completed 200 OK in 92ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 14:54:35 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 14:54:48 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 14:54:48 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 14:54:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 14:54:48 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.58 at 2015-04-24 15:17:55 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (1.0ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (6.6ms)
+Completed 200 OK in 43ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:17:56 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.6ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (2.7ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:29 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:30 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:30 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:30 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:18:30 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:19:33 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.9ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (47.7ms)
+Completed 200 OK in 115ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:34 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:19:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.5ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (2.9ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:19:39 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:20:11 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.6ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (41.9ms)
+Completed 200 OK in 99ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:20:11 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:20:11 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:20:11 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:11 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:11 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:20:12 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.7ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (51.9ms)
+Completed 200 OK in 145ms (Views: 128.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:14 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:15 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:15 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:15 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:15 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:15 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:22:50 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.5ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (40.3ms)
+Completed 200 OK in 93ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:22:50 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:22:51 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:23:27 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.5ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (37.1ms)
+Completed 200 OK in 135ms (Views: 123.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:23:28 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:26:01 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.5ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (59.6ms)
+Completed 200 OK in 132ms (Views: 130.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:26:02 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.7ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (56.5ms)
+Completed 200 OK in 106ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:45 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:27:46 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:30:18 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.7ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (43.5ms)
+Completed 200 OK in 134ms (Views: 131.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:30:19 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:32:15 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/sessions/new.html.slim within layouts/empty (24.3ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (Malformed indentation
+  /home/tao/RubyOnRails/EagleForce/consumer_health_index/app/views/devise/sessions/new.html.slim, Line 6, Column 1
+    # div class="col-md-7"
+    ^
+):
+    3:   div class="col-md-5" id="health_index_line_chart"
+    4:     p
+    5:       | testlkasjf 
+    6:  # div class="col-md-7"
+    7:   div class="middle-box text-center loginscreen  animated fadeInDown col-md-7"
+    8:     div
+    9:       div: h1 class="logo-name" IN+
+  app/views/devise/sessions/new.html.slim:6
+
+
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.5ms)
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:32:25 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.9ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (43.1ms)
+Completed 200 OK in 146ms (Views: 127.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:32:25 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:32:25 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:32:25 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:32:25 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:25 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:25 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:25 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:32:26 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:33:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.9ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (74.9ms)
+Completed 200 OK in 183ms (Views: 164.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:01 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.9ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (50.5ms)
+Completed 200 OK in 125ms (Views: 115.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:33:36 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:34:18 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (2.0ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (5.8ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:19 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.6ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (53.5ms)
+Completed 200 OK in 126ms (Views: 123.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:32 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:34:33 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:35:29 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.6ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (44.2ms)
+Completed 200 OK in 116ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:35:30 -0400
+
+
+Started GET "/users/sign_in?pp=disable" for 10.0.80.58 at 2015-04-24 15:37:06 -0400
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"pp"=>"disable"}
+  Rendered devise/shared/_links.html.slim (0.6ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (41.1ms)
+Completed 200 OK in 128ms (Views: 105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.58 at 2015-04-24 15:37:06 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.58 at 2015-04-24 15:37:06 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:06 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.58 at 2015-04-24 15:37:06 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.58 at 2015-04-24 15:37:06 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.58 at 2015-04-24 15:37:07 -0400
