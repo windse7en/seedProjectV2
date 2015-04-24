@@ -29,6 +29,8 @@ gem 'rack-mini-profiler'
 # Use slim for template
 gem 'slim'
 gem 'html2slim'
+# angularjs gem
+gem 'angularjs-rails'
 gem 'devise'
 # test for rails
 gem 'rspec-rails', :group => [:test, :development]

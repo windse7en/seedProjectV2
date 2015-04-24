@@ -1,0 +1,57 @@
+div ng-app="myApp"
+  h1
+
+  | Angular#index
+
+  p Try to change the names.
+
+  div ng_controller="myCtrl" 
+    | First Name:
+    input ng-model="firstName" type="text" /
+    br/
+    | Last Name:
+    input ng-model="lastName" type="text" /
+    br/
+    br/
+    | Full Name: {{ fullName() | uppercase }}
+    br/
+    | Salary: {{ salary | currency }}
+    div class="row"
+      button ng-disabled="myButton" id="addTemplate"
+        | add
+      input type="checkbox" ng-model="myButton" ng-show="false"
+        | Button
+    div ng-controller="customersCtrl" style='margin-top:20px'
+      table
+        tr ng_repeat="x in names | orderBy : 'Country' "
+          td
+            | {{ x.Name }}
+          td
+            | {{ x.Country }}
+
+  div id='buttonGroups'
+
+template id='buttonTemplate'
+  span
+    p
+      | Test
+    button id='buttonRemove'
+      | remove
+
+coffee:
+  i = 1
+  $('#addTemplate').on('click',()->
+    $('#buttonGroups').append($('#buttonTemplate').html())
+    i += 1
+    )
+  $('#buttonGroups').delegate("#buttonRemove", "click",()->
+    console.log($(this))
+    $(this).closest("span").toggle('slow', ()->
+      $(this).remove()
+    )
+  )
+
+
+
+= javascript_include_tag 'angular/controllers/testapp'
+

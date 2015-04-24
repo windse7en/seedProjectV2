@@ -1,5 +1,6 @@
 Myapp::Application.routes.draw do
 
+  get "angular/index"
   devise_for :users
 
   get "home/index"

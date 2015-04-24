@@ -7,7 +7,6 @@ div class="middle-box text-center loginscreen  animated fadeInDown"
     p Login in. To see it in action.
 
     == form_for(resource, as: resource_name, url: session_path(resource_name), class: "m-t", role: "form") do |f|
-
       div class="form-group"
         == f.email_field :email, autofocus: true, placeholder:"Username", class: "form-control"
         /input type="email" class="form-control" placeholder="Username" required=""
