@@ -11,6 +11,9 @@ div class="row border-bottom"
     ul class="nav navbar-top-links navbar-right" style="padding-top:17px"
       - if user_signed_in?
         li 
-          == button_to "Edit", edit_user_registration_path, :method => :get, :class => "form-control", :style => "border:0"
+          == button_to "Password", edit_user_registration_path, :method => :get, :class => "form-control", :style => "border:0"
         li
           == button_to "Log out", destroy_user_session_path, :method => :delete, :class => "form-control", :style => "border:0"
+
+= render "layouts/config_box"
+= javascript_include_tag "config_box.js"

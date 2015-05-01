@@ -6,18 +6,27 @@ nav class="navbar-default navbar-static-side" role="navigation"
         div class="dropdown profile-element"
           a data-toggle="dropdown" class="dropdown-toggle" href="#"
             span class="block m-t-xs"
-              strong class="font-bold" Welcome #{current_user.role}
-            span class="text-muted text-xs block" Homepage
+              i class="fa fa-user"
+                strong class="font-bold" 
+                  |  Welcome #{current_user.role}
+            span class="text-muted text-xs block" id="page_sign" 
+              - if current_user.role.downcase == 'patient' 
+                | Consumer Health Index
           ul class="dropdown-menu animated fadeInRight m-t-xs"
-            li: a[href="#"] Logout
+            li
+              == button_to "Log out", destroy_user_session_path, :method => :delete, :class => "form-control", :style => "border:0; font-size:inherit"
         div class="logo-element"
           
       li class="#{'active' if current_page?('/')}"
         == link_to "/" do
-          i class="fa fa-laptop"
-          span class="nav-label" Main page
+          i class="fa fa-line-chart"
+          span class="nav-label" Dashboard
 
       li class="#{'active' if current_page?('/home/minor')}"
         == link_to "/home/minor" do
-          i class="fa fa-laptop"
-          span class="nav-label" Minor page
+          i class="fa fa-user-md"
+          span class="nav-label" Medication
+
+- if current_user.role.downcase == 'patient' 
+  div
+    == render "layouts/website_tour"

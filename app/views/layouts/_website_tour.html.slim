@@ -1,0 +1,10 @@
+== javascript_include_tag "enjoyhint/kinetic.min.js", "enjoyhint/enjoyhint.min.js"
+== stylesheet_link_tag "enjoyhint/enjoyhint.css"
+
+coffee:
+  enjoyhint_instance = new EnjoyHint({})
+  enjoyhint_script_steps = [{
+    'click .navbar-top-links': 'Check the top navigation bar'
+  }]
+  enjoyhint_instance.set(enjoyhint_script_steps)
+  enjoyhint_instance.run()

@@ -1,4 +1,6 @@
     // Config box
+//
+    var localStorageSupport = false;
 
     // Enable/disable fixed top navbar
     $('#fixednavbar').click(function () {
