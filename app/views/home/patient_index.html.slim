@@ -1,12 +1,27 @@
 div class="wrapper wrapper-content animated fadeInRight"
   div class="row" id="sortable-view"
     div class="col-md-3 ui-sortable"
-      div class="ibox float-e-margins"
+      
+      div class="ibox float-e-margins" id="whole_score"
+        div class="ibox-title"
+          span class="label label-info pull-right"
+            | Apr, 06
+          h5
+            | Consumer Health Score
+        div class="ibox-content"
+          div class="text-left"
+            h1 
+              | 89.78
+          div class="stat-percent font-bold "
+            | 17%
+            i class="fa fa-level-up" style="color:green"
+
+      div class="ibox float-e-margins hide " id="score_detail"
         div class="ibox-title"
           h5
             | Patient Scores
           div class="ibox-tools"
-            a class="collapse-link"
+            a class="collapse-link" id="score_detail_collapse-link"
               i class="fa fa-chevron-up"
             a class="close-link"
               i class="fa fa-times"
@@ -47,11 +62,11 @@ div class="wrapper wrapper-content animated fadeInRight"
           div class="progress progress-small"
             div style="width: 60%;" class="progress-bar progress-bar-warning "
         
-    div class="col-md-6 ui-sortable"
+    div class="col-md-6 ui-sortable" id="line_chart"
       div class="ibox float-e-margins"
         div class="ibox-title"
           h5
-            | Line Chart Example  
+            | Consumer Score History
             small
               | With custom colors.
           div class="ibox-tools"
@@ -63,11 +78,11 @@ div class="wrapper wrapper-content animated fadeInRight"
           div
             canvas id="lineChart" height="140"
 
-    div class="col-md-3 ui-sortable"
+    div class="col-md-3 ui-sortable" id="score_trend"
       div class="ibox float-e-margins"
         div class="ibox-title"
           h5
-            | Score Trend:
+            | Group Score Trend:
           div class="ibox-tools"
             a class="collapse-link"
               i class="fa fa-chevron-up"
@@ -93,77 +108,36 @@ div class="wrapper wrapper-content animated fadeInRight"
               div class="col-xs-2 text-right"
                 span class="font-bold"
                   |40
-
-
-
-javascript:
-  function lineChart(){
-    var lineData = {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [
-            {
-                label: "Example dataset",
-                fillColor: "rgba(220,220,220,0.5)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [65, 59, 80, 81, 56, 55, 40]
-            },
-            {
-                label: "Example dataset",
-                fillColor: "rgba(26,179,148,0.5)",
-                strokeColor: "rgba(26,179,148,0.7)",
-                pointColor: "rgba(26,179,148,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(26,179,148,1)",
-                data: [28, 48, 40, 19, 86, 27, 90]
-            }
-        ]
-    };
-
-    var lineOptions = {
-        scaleShowGridLines: true,
-        scaleGridLineColor: "rgba(0,0,0,.05)",
-        scaleGridLineWidth: 1,
-        bezierCurve: true,
-        bezierCurveTension: 0.4,
-        pointDot: true,
-        pointDotRadius: 4,
-        pointDotStrokeWidth: 1,
-        pointHitDetectionRadius: 20,
-        datasetStroke: true,
-        datasetStrokeWidth: 2,
-        datasetFill: true,
-        responsive: true,
-    };
-
-    var ctx = document.getElementById("lineChart").getContext("2d");
-    var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
-    };
-  // Dragable panels
-  $(function() {
-
-      WinMove();
-
-      function WinMove() {
-          var element = "[class*=col]";
-          var handle = ".ibox-title";
-          var connect = "[class*=col]";
-          $(element).sortable(
-               {
-                    handle: handle,
-                    connectWith: connect,
-                    tolerance: 'pointer',
-                    forcePlaceholderSize: true,
-                    opacity: 0.8,
-               })
-               .disableSelection();
-      };
-      lineChart();
-  });
-
 = javascript_include_tag "chartjs/Chart.min.js",
-  "jquery-ui/jquery-ui-1.10.4.min.js"
+  "jquery-ui/jquery-ui-1.10.4.min.js",
+  "charts/linechart.js"
+
+coffee:
+  $(".ibox").each((index) ->
+    $(this).css('box-shadow','0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)')
+  )
+  $ ->
+
+    WinMove = () ->
+        element = "[class*=col]"
+        handle = ".ibox-title"
+        connect = "[class*=col]"
+        $(element).sortable(
+             {
+                  handle: handle,
+                  connectWith: connect,
+                  tolerance: 'pointer',
+                  forcePlaceholderSize: true,
+                  opacity: 0.8,
+             })
+             .disableSelection()
+    lineChart()
+    WinMove()
+  
+  $("#whole_score").on("click", () -> 
+    $("#score_detail").removeClass("hide")
+    $("#score_detail").addClass("animated flash")
+  )
+
+
+

@@ -1,10 +1,55 @@
-== javascript_include_tag "enjoyhint/kinetic.min.js", "enjoyhint/enjoyhint.min.js"
-== stylesheet_link_tag "enjoyhint/enjoyhint.css"
+== stylesheet_link_tag "enjoyhint/enjoyhint.css", "toastr/toastr.min.css"
+== javascript_include_tag "enjoyhint/kinetic.min.js", "enjoyhint/enjoyhint.min.js", 'toastr/toastr.min.js'
 
 coffee:
-  enjoyhint_instance = new EnjoyHint({})
+  show_toastr = () ->
+    toastr.options = {
+      closeButton: true,
+      progressBar: true,
+      showMethod: 'slideDown',
+      timeOut: 4000,
+    }
+    toastr.success('Enjoy your index dashboard!', 'Welcome to Health Index')
+
+  enjoyhint_instance = new EnjoyHint({
+    onEnd: () ->
+      console.log("Web tour well done!")
+      setTimeout( show_toastr, 300 )
+  })
   enjoyhint_script_steps = [{
-    'click .navbar-top-links': 'Check the top navigation bar'
+    'click .navbar-minimalize': 'Click to minimize the side navigation bar.',
+    'nextButton': { text:"Next"},
+    'showNext': true
+  },{
+    'timeout': 500,
+    'click #whole_score': 'Click to see detail',
+    'nextButton': { text:"Next"},
+    'showNext': true
+  },{
+    'click #score_detail_collapse-link': 'You can minimize the panel',
+    'shape': 'circle',
+    'showNext': true
+  },{
+    'click #line_chart': 'Track your score history',
+    'showNext': true
+  },{
+    'click #score_trend': 'Check your group score trend',
+    'nextButton': {className:"myDone", text:"Well Done"},
+    'showSkip': false,
+    'showNext': true
   }]
+
   enjoyhint_instance.set(enjoyhint_script_steps)
   enjoyhint_instance.run()
+
+  $('.enjoyhint').delegate('.enjoyhint_close_btn','load', ()->
+    alert(1)
+  )
+
+  $(".enjoyhint").delegate(".enjoyhint_next_btn", "click", () ->
+    switch enjoyhint_instance.getCurrentStep()
+      when 1 then $('.pace-done').addClass('mini-navbar')
+      when 2 then $("#score_detail").removeClass("hide")
+      else console.log(enjoyhint_instance.getCurrentStep())
+  )
+

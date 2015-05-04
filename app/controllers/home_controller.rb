@@ -26,11 +26,15 @@ class HomeController < ApplicationController
   private
 
   def get_all_patient_data
-    url_parsed = URI.parse("http://10.0.0.13:3003/get_all_patient_score/")
     begin
-      response = Net::HTTP.get_response(url_parsed) {|http|
-        http.read_timeout = 5
-      }
+      p "start"
+      url = URI.parse("http://10.0.80.55:3003/get_all_patient_score/")
+      p "parsed"
+      http = Net::HTTP.new(url.host, url.port)
+      http.read_timeout = 1
+      http.open_timeout = 1
+      response = http.start() {|htp| htp.get(url.path) }
+      p "finished"
     rescue 
       return {data: "nodata"}
     end
