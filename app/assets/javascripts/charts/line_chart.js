@@ -1,6 +1,6 @@
 var dataset = [1, 2, 3, 4, 5, 6];
-var words = ["Financial H.I", 
-             "Industrial H.Index",
+var words = ["Financial H.I",
+             "National Health Index",
              "Goverment Health Index",
              "Industrial Health Index",
              "Health Related Company Health Index",

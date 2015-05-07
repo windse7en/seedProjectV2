@@ -262,6 +262,7 @@ DEPENDENCIES
   html2slim
   jbuilder (~> 1.2)
   parallel_tests
+  pry
   rack-mini-profiler
   rails (= 4.0.2)
   rspec-rails

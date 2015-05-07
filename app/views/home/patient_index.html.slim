@@ -2,12 +2,12 @@ div class="wrapper wrapper-content animated fadeInRight"
   div class="row" id="sortable-view"
     div class="col-md-3 ui-sortable"
       
-      div class="ibox float-e-margins" id="whole_score"
+      div class="ibox float-e-margins" id="whole_score" data-toggle="tooltip" data-placement="bottom" data-original-title="Your health index"
         div class="ibox-title"
           span class="label label-info pull-right"
             | Apr, 06
-          h5
-            | Consumer Health Score
+          h5 
+            | My Health Index
         div class="ibox-content"
           div class="text-left"
             h1 
@@ -22,45 +22,45 @@ div class="wrapper wrapper-content animated fadeInRight"
             | Patient Scores
           div class="ibox-tools"
             a class="collapse-link" id="score_detail_collapse-link"
-              i class="fa fa-chevron-up"
+              i class="fa fa-chevron-down"
             a class="close-link"
               i class="fa fa-times"
-        div class="ibox-content"
-          div
-            | Whole Score
+        div class="ibox-content" style="display:none"
+          div id='my_health_index' data-toggle="tooltip" data-placement="top" data-original-title="Your health index"
+            | My Health Index
             small class="pull-right" 60/100
-          div class="progress progress-small"
-            div style="width: 60%;" class="progress-bar progress-bar-warning"
+            div class="progress progress-small"
+              div style="width: 60%;" class="progress-bar progress-bar-warning"
           div
             | Clinical Score
             small class="pull-right" 80/100
-          div class="progress progress-small"
-            div style="width: 80%;" class="progress-bar"
+            div class="progress progress-small"
+              div style="width: 80%;" class="progress-bar"
           div
             | Behavior Score
             small class="pull-right" 50/100
-          div class="progress progress-small"
-            div style="width: 50%;" class="progress-bar progress-bar-danger "
+            div class="progress progress-small"
+              div style="width: 50%;" class="progress-bar progress-bar-danger "
           div
             | Demographic Score
             small class="pull-right" 30/100
-          div class="progress progress-small"
-            div style="width: 30%;" class="progress-bar progress-bar-danger "
+            div class="progress progress-small"
+              div style="width: 30%;" class="progress-bar progress-bar-danger "
           div
             | Environmental Score
             small class="pull-right" 90/100
-          div class="progress progress-small"
-            div style="width: 90%;" class="progress-bar"
+            div class="progress progress-small"
+              div style="width: 90%;" class="progress-bar"
           div
             | Sensor Score
             small class="pull-right" 10/100
-          div class="progress progress-small"
-            div style="width: 10%;" class="progress-bar progress-bar-danger "
+            div class="progress progress-small"
+              div style="width: 10%;" class="progress-bar progress-bar-danger "
           div
             | Financial Score
             small class="pull-right" 60/100
-          div class="progress progress-small"
-            div style="width: 60%;" class="progress-bar progress-bar-warning "
+            div class="progress progress-small"
+              div style="width: 60%;" class="progress-bar progress-bar-warning "
         
     div class="col-md-6 ui-sortable" id="line_chart"
       div class="ibox float-e-margins"
@@ -110,7 +110,7 @@ div class="wrapper wrapper-content animated fadeInRight"
                   |40
 = javascript_include_tag "chartjs/Chart.min.js",
   "jquery-ui/jquery-ui-1.10.4.min.js",
-  "charts/linechart.js"
+  "charts/linechart.js", "bootstrap.min.js"
 
 coffee:
   $(".ibox").each((index) ->
@@ -133,6 +133,7 @@ coffee:
              .disableSelection()
     lineChart()
     WinMove()
+    $('[data-toggle="tooltip"]').tooltip()
   
   $("#whole_score").on("click", () -> 
     $("#score_detail").removeClass("hide")

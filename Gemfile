@@ -36,6 +36,7 @@ gem 'devise'
 gem 'rspec-rails', :group => [:test, :development]
 
 group :development do
+  gem 'pry'
   gem 'guard'
   gem 'guard-livereload', '~> 2.4', require: false
   gem 'guard-cucumber'
