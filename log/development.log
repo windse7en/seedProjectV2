@@ -24923,3 +24923,834 @@ ActionController::RoutingError (No route matches [GET] "/toastr.js.map"):
   Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.2ms)
   Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
   Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (61.6ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e7OhLe9fDnuAxt3ADk7vRzmNr3FXOBRpqsiaMk1vCk8="}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://10.0.80.59:3000/
+Completed 302 Found in 37ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (6.8ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (33.4ms)
+Completed 200 OK in 98ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:18 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started GET "/assets/charts/d3.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started GET "/assets/charts/line_chart.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.76 at 2015-05-07 14:15:19 -0400
+
+
+Started POST "/users/sign_in" for 10.0.80.76 at 2015-05-07 14:29:07 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cpnkPsdZRVNxeoK6NlOAFnBG1CLN6wT2t57ZiGbqWBY=", "user"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[35mSQL (5.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 7  [["last_sign_in_at", Mon, 04 May 2015 13:44:21 UTC +00:00], ["current_sign_in_at", Thu, 07 May 2015 18:29:07 UTC +00:00], ["last_sign_in_ip", "10.0.80.58"], ["current_sign_in_ip", "10.0.80.76"], ["sign_in_count", 11], ["updated_at", Thu, 07 May 2015 18:29:07 UTC +00:00]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://10.0.80.59:3000/
+Completed 302 Found in 333ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/" for 10.0.80.76 at 2015-05-07 14:29:07 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (4.2ms)
+  Rendered layouts/_website_tour.html.slim (283.8ms)
+  Rendered layouts/_navigation.html.slim (287.3ms)
+  Rendered layouts/_config_box.html.slim (0.3ms)
+  Rendered layouts/_topnavbar.html.slim (3.3ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1338ms (Views: 319.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/enjoyhint/enjoyhint.css?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/toastr/toastr.min.css?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/enjoyhint/kinetic.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/enjoyhint/enjoyhint.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/toastr/toastr.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/charts/linechart.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:29:09 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.76 at 2015-05-07 14:29:10 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 10.0.80.76 at 2015-05-07 14:29:10 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 10.0.80.76 at 2015-05-07 14:29:10 -0400
+
+
+Started GET "/toastr.js.map" for 10.0.80.76 at 2015-05-07 14:29:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/toastr.js.map"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.3ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.1ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (101.0ms)
+
+
+Started GET "/assets/enjoyhint/Casino_Hand/casino_hand-webfont.woff" for 10.0.80.76 at 2015-05-07 14:29:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/enjoyhint/Casino_Hand/casino_hand-webfont.woff"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:193:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.6ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (109.5ms)
+
+
+Started GET "/assets/enjoyhint/Casino_Hand/casino_hand-webfont.ttf" for 10.0.80.76 at 2015-05-07 14:29:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/enjoyhint/Casino_Hand/casino_hand-webfont.ttf"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:193:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.0ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.1ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (103.5ms)
+
+
+Started DELETE "/users/sign_out" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VGjKc9v6akQB/Hmx8OewAy2/USz2ONgwE/UUi2F3QyY="}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://10.0.80.59:3000/
+Completed 302 Found in 17ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/users/sign_in" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (1.4ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (8.8ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.76 at 2015-05-07 14:36:28 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (1.5ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (7.0ms)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/charts/d3.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/assets/charts/line_chart.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:55 -0400
+
+
+Started GET "/users/sign_in" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (0.8ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (4.7ms)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.76 at 2015-05-07 14:39:59 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started GET "/assets/charts/d3.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started GET "/assets/charts/line_chart.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:00 -0400
+
+
+Started POST "/users/sign_in" for 10.0.80.76 at 2015-05-07 14:40:14 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5WUMi2mwOfL+0M5kn74W04iwHER8YejDowZTxxi+A5o=", "user"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 7  [["last_sign_in_at", Thu, 07 May 2015 18:29:07 UTC +00:00], ["current_sign_in_at", Thu, 07 May 2015 18:40:14 UTC +00:00], ["last_sign_in_ip", "10.0.80.76"], ["sign_in_count", 12], ["updated_at", Thu, 07 May 2015 18:40:14 UTC +00:00]]
+  [1m[36m (33.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://10.0.80.59:3000/
+Completed 302 Found in 267ms (ActiveRecord: 35.1ms)
+
+
+Started GET "/" for 10.0.80.76 at 2015-05-07 14:40:14 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (6.1ms)
+  Rendered layouts/_website_tour.html.slim (2.1ms)
+  Rendered layouts/_navigation.html.slim (4.2ms)
+  Rendered layouts/_config_box.html.slim (0.3ms)
+  Rendered layouts/_topnavbar.html.slim (5.3ms)
+  Rendered layouts/_footer.html.slim (1.4ms)
+Completed 200 OK in 1061ms (Views: 48.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/style.css?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/enjoyhint/enjoyhint.css?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/toastr/toastr.min.css?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/enjoyhint/kinetic.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/enjoyhint/enjoyhint.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/toastr/toastr.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/charts/linechart.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 10.0.80.76 at 2015-05-07 14:40:16 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 10.0.80.76 at 2015-05-07 14:40:17 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 10.0.80.76 at 2015-05-07 14:40:17 -0400
+
+
+Started GET "/toastr.js.map" for 10.0.80.76 at 2015-05-07 14:40:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/toastr.js.map"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (21.5ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (96.2ms)
+
+
+Started GET "/assets/enjoyhint/Casino_Hand/casino_hand-webfont.woff" for 10.0.80.76 at 2015-05-07 14:40:17 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/enjoyhint/Casino_Hand/casino_hand-webfont.woff"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:193:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.7ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.8ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (56.2ms)
+
+
+Started GET "/assets/enjoyhint/Casino_Hand/casino_hand-webfont.ttf" for 10.0.80.76 at 2015-05-07 14:40:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/enjoyhint/Casino_Hand/casino_hand-webfont.ttf"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:193:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.0ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendered /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (155.9ms)
