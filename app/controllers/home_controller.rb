@@ -4,7 +4,6 @@ class HomeController < ApplicationController
 
     @mainTitle = "Welcome in Inspinia Rails Seed Project"
     @mainDesc = "It is an application skeleton for a typical Ruby on Rails web app. You can use it to quickly bootstrap your webapp projects and dev/prod environment."
-
     if user_signed_in?
       if (current_user.role != nil && !current_user.role.empty?)
         @result = get_all_patient_data

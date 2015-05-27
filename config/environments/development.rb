@@ -42,6 +42,9 @@ Myapp::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  ENV['LINKEDIN_KEY'] = '77k8153c3rgr15'
+  ENV['LINKEDIN_SECRET'] = 'WvWhomsMJGQtwsl7'
 end
 
 silence_warnings do

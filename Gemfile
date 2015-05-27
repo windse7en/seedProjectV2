@@ -35,8 +35,12 @@ gem 'devise'
 # test for rails
 gem 'rspec-rails', :group => [:test, :development]
 
+
+gem 'omniauth-linkedin-oauth2'
+
 group :development do
   gem 'pry'
+  gem 'byebug'
   gem 'guard'
   gem 'guard-livereload', '~> 2.4', require: false
   gem 'guard-cucumber'
