@@ -79,6 +79,7 @@ $(document).ready(function () {
     // Minimalize menu
     $('.navbar-minimalize').click(function () {
         $("body").toggleClass("mini-navbar");
+        if(typeof($('#datepicker'))!='undefined'){$("#datepicker").toggle();}
         SmoothlyMenu();
 
     });

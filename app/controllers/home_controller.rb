@@ -7,6 +7,7 @@ class HomeController < ApplicationController
     if user_signed_in?
       if (current_user.role != nil && !current_user.role.empty?)
         @result = get_all_patient_data
+        @show_tour = false
         render current_user.role+'_index', result: @result
       else
         render 'index'

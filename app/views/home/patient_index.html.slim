@@ -1,3 +1,54 @@
+div class="row border-bottom white-bg dashboard-header"
+  .col-sm-3
+    h2
+      | Welcome #{current_user.email}
+    small You have 5 things.
+    ul.list-group.clear-list.m-t
+      li.list-group-item.fist-item
+        span.pull-right
+          | 09:00 pm
+        span.label.label-success 1
+          | Run 2 miles
+      li.list-group-item
+        span.pull-right
+          | 10:16 am
+        span.label.label-info 2
+          | Breakfast with low calorie
+      li.list-group-item
+        span.pull-right
+          | 03:22 pm
+        span.label.label-primary 3
+          | Doctor Appointment
+      li.list-group-item
+        span.pull-right
+          | 05:06 pm
+        span.label.label-default 4
+          | Pick up the lab report
+      li.list-group-item
+        span.pull-right
+          | 10:00 pm
+        span.label.label-primary 5
+          | Summary of the day
+
+  .col-sm-6
+    canvas#radarChart
+
+  .col-sm-3
+    .statistic-box
+      h4
+        | Medicine Progress
+      p
+        | You have two medicine with not compleated task.
+      .row.text-center
+         .col-lg-6
+           canvas#polarChart height="80" style=("width: 80px; height: 80px;") width="80" 
+           h5 Claritin
+         .col-lg-6
+           canvas#doughnutChart height="78" style=("width: 78px; height: 78px;") width="78" 
+           h5 Chlorpheniramine
+      .m-t
+        small If there are any problem, talk with Dr.Jerry as soon as possible.
+
 div class="wrapper wrapper-content animated fadeInRight"
   div class="row" id="sortable-view"
     div class="col-md-3 ui-sortable"
@@ -110,7 +161,7 @@ div class="wrapper wrapper-content animated fadeInRight"
                   |40
 = javascript_include_tag "chartjs/Chart.min.js",
   "jquery-ui/jquery-ui-1.10.4.min.js",
-  "charts/linechart.js", "bootstrap.min.js"
+  "bootstrap.min.js", "patient/index.js"
 
 coffee:
   $(".ibox").each((index) ->
@@ -131,7 +182,6 @@ coffee:
                   opacity: 0.8,
              })
              .disableSelection()
-    lineChart()
     WinMove()
     $('[data-toggle="tooltip"]').tooltip()
   
