@@ -1,8 +1,24 @@
+<video autoplay loop poster="background.jpg" id="bgvid">
+  source src="/video/background.mp4" type="video/mp4"
+</video>
+css:
+  video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-55%);
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  }
 
 div class="row"
-  div class="col-md-7" id="health_index_line_chart" style="padding-top:15%; padding-left:15%"
-  
-  div class="col-md-5"
+  div class="col-md-3 col-md-offset-6" id="health_index_line_chart" style="padding-top:15%; padding-left:15%"
     div class="middle-box text-center loginscreen  animated fadeInDown "
       div
         div: h1 class="logo-name" EF
@@ -25,6 +41,3 @@ div class="row"
 
       p class="m-t"
         small we app framework base on Bootstrap 3 &copy; 2015
-
-= javascript_include_tag 'charts/d3.min'
-= javascript_include_tag 'charts/line_chart'
