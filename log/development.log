@@ -38171,3 +38171,5020 @@ ActionController::RoutingError (No route matches [GET] "/users/background.jpg"):
   Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
   Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
   Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (51.0ms)
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-29 22:15:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 25ms
+
+
+Started GET "/users/sign_in" for 192.168.1.6 at 2015-05-29 22:15:22 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (7.9ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (58.2ms)
+Completed 200 OK in 343ms (Views: 312.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-29 22:15:22 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-29 22:15:22 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-29 22:15:22 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:23 -0400
+
+
+Started GET "/users/background.jpg" for 192.168.1.6 at 2015-05-29 22:15:24 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/background.jpg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.2ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ysQ5Mq4skCAm/GkSnmbAV6Pij0LInYvjOoaYCMlYMZ0=", "user"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 135ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ysQ5Mq4skCAm/GkSnmbAV6Pij0LInYvjOoaYCMlYMZ0=", "user"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  Rendered devise/shared/_links.html.slim (0.7ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (4.0ms)
+Completed 200 OK in 144ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:47 -0400
+
+
+Started GET "/users/background.jpg" for 192.168.1.6 at 2015-05-29 22:15:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/background.jpg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (31.3ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.6 at 2015-05-29 22:15:57 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ysQ5Mq4skCAm/GkSnmbAV6Pij0LInYvjOoaYCMlYMZ0=", "user"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 134ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ysQ5Mq4skCAm/GkSnmbAV6Pij0LInYvjOoaYCMlYMZ0=", "user"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  Rendered devise/shared/_links.html.slim (1.9ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (7.2ms)
+Completed 200 OK in 155ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+
+Started GET "/users/background.jpg" for 192.168.1.6 at 2015-05-29 22:15:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/background.jpg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.2ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.4ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.6 at 2015-05-29 22:16:02 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ysQ5Mq4skCAm/GkSnmbAV6Pij0LInYvjOoaYCMlYMZ0=", "user"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[35mSQL (11.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 7  [["last_sign_in_at", Fri, 29 May 2015 18:34:16 UTC +00:00], ["current_sign_in_at", Sat, 30 May 2015 02:16:02 UTC +00:00], ["last_sign_in_ip", "10.0.80.43"], ["current_sign_in_ip", "192.168.1.6"], ["sign_in_count", 18], ["updated_at", Sat, 30 May 2015 02:16:02 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.1.8:3000/
+Completed 302 Found in 170ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-29 22:16:02 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (298.9ms)
+  Rendered layouts/_navigation.html.slim (186.7ms)
+  Rendered layouts/_config_box.html.slim (29.3ms)
+  Rendered layouts/_topnavbar.html.slim (49.7ms)
+  Rendered layouts/_footer.html.slim (5.1ms)
+Completed 200 OK in 584ms (Views: 578.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-29 22:16:03 -0400
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 192.168.1.6 at 2015-05-29 22:16:04 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-29 22:16:04 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-29 22:16:04 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-29 22:16:04 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-29 22:21:09 -0400
+Processing by HomeController#minor as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/minor.html.slim within layouts/application (9.1ms)
+  Rendered layouts/_navigation.html.slim (1.8ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (3.2ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 51ms (Views: 41.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:10 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-29 22:21:14 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (4.6ms)
+  Rendered layouts/_navigation.html.slim (1.7ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 47ms (Views: 36.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:21:15 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-29 22:30:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (293.6ms)
+  Rendered layouts/_navigation.html.slim (187.6ms)
+  Rendered layouts/_config_box.html.slim (19.0ms)
+  Rendered layouts/_topnavbar.html.slim (35.4ms)
+  Rendered layouts/_footer.html.slim (7.0ms)
+Completed 200 OK in 817ms (Views: 771.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-29 22:30:09 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (231.1ms)
+  Rendered layouts/_navigation.html.slim (2.1ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.2ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 260ms (Views: 255.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:01 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-29 22:32:02 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-29 22:32:15 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (243.5ms)
+  Rendered layouts/_navigation.html.slim (1.8ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.8ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 285ms (Views: 273.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:15 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:15 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:15 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-29 22:32:16 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 21:40:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 27ms
+
+
+Started GET "/users/sign_in" for 192.168.1.6 at 2015-05-31 21:40:49 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.slim (7.3ms)
+  Rendered devise/sessions/new.html.slim within layouts/empty (62.9ms)
+Completed 200 OK in 357ms (Views: 316.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+
+Started GET "/users/background.jpg" for 192.168.1.6 at 2015-05-31 21:40:50 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/background.jpg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.6ms)
+
+
+Started GET "/users/background.jpg" for 192.168.1.6 at 2015-05-31 21:40:51 -0400
+
+ActionController::RoutingError (No route matches [GET] "/users/background.jpg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.2) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tao/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/tao/.rvm/gems/ruby-2.1.2@seedProject/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.5ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.6 at 2015-05-31 21:40:57 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FyU9LREavq/jZjE1gMZbwS+S5guyb0/HsPNWMe6q6xM=", "user"=>{"email"=>"1@1.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '1@1.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (9.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 7  [["last_sign_in_at", Sat, 30 May 2015 02:16:02 UTC +00:00], ["current_sign_in_at", Mon, 01 Jun 2015 01:40:57 UTC +00:00], ["last_sign_in_ip", "192.168.1.6"], ["sign_in_count", 19], ["updated_at", Mon, 01 Jun 2015 01:40:57 UTC +00:00]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.1.8:3000/
+Completed 302 Found in 164ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 21:40:57 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (247.8ms)
+  Rendered layouts/_navigation.html.slim (186.0ms)
+  Rendered layouts/_config_box.html.slim (26.1ms)
+  Rendered layouts/_topnavbar.html.slim (40.4ms)
+  Rendered layouts/_footer.html.slim (5.6ms)
+Completed 200 OK in 622ms (Views: 513.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 21:40:58 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.slim (202.3ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 365ms (Views: 226.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:47 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:01:48 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:01:48 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:01:48 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+Processing by HomeController#minor as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/minor.html.slim within layouts/application (11.1ms)
+  Rendered layouts/_navigation.html.slim (2.0ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 49ms (Views: 41.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:01:50 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:02:01 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (4.6ms)
+  Rendered layouts/_navigation.html.slim (2.7ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.0ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 1047ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:02:03 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+Processing by HomeController#minor as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/minor.html.slim within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.slim (2.0ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (1.9ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 38ms (Views: 31.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:02:06 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:02:08 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (3.7ms)
+  Rendered layouts/_navigation.html.slim (2.5ms)
+  Rendered layouts/_config_box.html.slim (0.7ms)
+  Rendered layouts/_topnavbar.html.slim (2.8ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1042ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:02:09 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:02:10 -0400
+Processing by HomeController#minor as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/minor.html.slim within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.slim (1.5ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.9ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 31ms (Views: 25.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:02:11 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+Processing by HomeController#minor as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/minor.html.slim within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.slim (187.4ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 220ms (Views: 216.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:05:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:44 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:44 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:44 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:44 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:05:44 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:06:04 -0400
+Processing by HomeController#minor as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/minor.html.slim within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.slim (186.9ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (3.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 227ms (Views: 218.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:06:05 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:06:44 -0400
+Processing by HomeController#minor as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/minor.html.slim within layouts/application (0.3ms)
+  Rendered layouts/_navigation.html.slim (2.8ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (3.8ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:06:45 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+Processing by HomeController#minor as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/minor.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.slim (1.9ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:12 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:08:13 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:08:17 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (3.0ms)
+  Rendered layouts/_navigation.html.slim (1.7ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 1035ms (Views: 27.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:18 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:18 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:08:19 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:08:51 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.slim (209.7ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.6ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 1241ms (Views: 236.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:52 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:08:53 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.slim (2.1ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.0ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 44ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:08:56 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:08:57 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:08:57 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:09:15 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (2.9ms)
+  Rendered layouts/_navigation.html.slim (210.2ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (3.3ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1242ms (Views: 237.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:09:16 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:09:17 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:09:17 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:09:17 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:10:31 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.slim (255.0ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (3.7ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1293ms (Views: 284.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:10:33 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:13:48 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.slim (310.8ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (3.3ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 371ms (Views: 349.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:13:49 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:16:18 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.slim (3.5ms)
+  Rendered layouts/_config_box.html.slim (0.4ms)
+  Rendered layouts/_topnavbar.html.slim (4.8ms)
+  Rendered layouts/_footer.html.slim (0.3ms)
+Completed 200 OK in 1050ms (Views: 44.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:16:40 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:17:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:17:58 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:17:58 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:17:58 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:17:58 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:18:17 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.slim (2.1ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 1054ms (Views: 41.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:18:18 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:18:19 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:18:19 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:18:19 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:20:07 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.slim (196.7ms)
+  Rendered layouts/_config_box.html.slim (0.5ms)
+  Rendered layouts/_topnavbar.html.slim (3.0ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1227ms (Views: 221.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:20:09 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:22:07 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (2.8ms)
+  Rendered layouts/_navigation.html.slim (189.4ms)
+  Rendered layouts/_config_box.html.slim (1.2ms)
+  Rendered layouts/_topnavbar.html.slim (3.5ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1224ms (Views: 216.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:22:08 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:22:09 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:22:09 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:22:09 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:23:08 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (5.6ms)
+  Rendered layouts/_navigation.html.slim (194.2ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.3ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1247ms (Views: 235.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:09 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:23:10 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:23:10 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:23:10 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:23:42 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.slim (199.2ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.6ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1236ms (Views: 224.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:23:44 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:24:12 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (2.0ms)
+  Rendered layouts/_navigation.html.slim (202.0ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.3ms)
+  Rendered layouts/_footer.html.slim (0.3ms)
+Completed 200 OK in 1233ms (Views: 226.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:24:13 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:24:14 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:24:14 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+Processing by HomeController#minor as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/minor.html.slim within layouts/application (0.0ms)
+  Rendered layouts/_navigation.html.slim (3.2ms)
+  Rendered layouts/_config_box.html.slim (0.3ms)
+  Rendered layouts/_topnavbar.html.slim (3.2ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 47ms (Views: 39.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:24:49 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:24:50 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:24:50 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:24:50 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:24:51 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.slim (1.8ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (3.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 50ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+Processing by HomeController#minor as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/minor.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.slim (1.8ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.1ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:06 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:25:07 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:25:07 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:25:07 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:25:08 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (3.5ms)
+  Rendered layouts/_navigation.html.slim (1.8ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.8ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1044ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:09 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:10 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:10 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:10 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:10 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:25:10 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:25:10 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:25:10 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:25:10 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:33:06 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.slim (183.9ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.5ms)
+  Rendered layouts/_footer.html.slim (0.4ms)
+Completed 200 OK in 278ms (Views: 214.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:33:07 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.slim (190.4ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.1ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 257ms (Views: 216.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:05 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:36:06 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:36:08 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.slim (12.1ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.3ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1059ms (Views: 50.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:09 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:36:10 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:36:10 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:36:10 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:36:55 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (5.0ms)
+  Rendered layouts/_navigation.html.slim (186.7ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (3.1ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1240ms (Views: 230.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:36:57 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:38:56 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (5.1ms)
+  Rendered layouts/_navigation.html.slim (185.9ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.3ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 361ms (Views: 226.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:38:57 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:40:51 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.slim (187.1ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.8ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 1224ms (Views: 214.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:40:52 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:40:53 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:40:53 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:40:53 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:40:59 -0400
+Processing by HomeController#minor as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/minor.html.slim within layouts/application (0.2ms)
+  Rendered layouts/_navigation.html.slim (2.2ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 39ms (Views: 32.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:41:00 -0400
+
+
+Started GET "/home/minor" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+Processing by HomeController#minor as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/minor.html.slim within layouts/application (0.1ms)
+  Rendered layouts/_navigation.html.slim (190.3ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 218ms (Views: 213.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:41:32 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:41:33 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:41:33 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered home/patient_index.html.slim within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.slim (2.0ms)
+  Rendered layouts/_config_box.html.slim (0.1ms)
+  Rendered layouts/_topnavbar.html.slim (2.4ms)
+  Rendered layouts/_footer.html.slim (0.1ms)
+Completed 200 OK in 43ms (Views: 27.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:35 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:41:36 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:41:36 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:41:36 -0400
+
+
+Started GET "/" for 192.168.1.6 at 2015-05-31 22:41:45 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered home/patient_index.html.slim within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.slim (198.9ms)
+  Rendered layouts/_config_box.html.slim (0.2ms)
+  Rendered layouts/_topnavbar.html.slim (2.5ms)
+  Rendered layouts/_footer.html.slim (0.2ms)
+Completed 200 OK in 243ms (Views: 226.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/font-awesome.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/animate/animate.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/style.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/jquery/jquery-2.1.1.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.css?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/pace/pace.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/inspinia.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap-datepicker.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/chartjs/Chart.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/config_box.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/jquery-ui/jquery-ui-1.10.4.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/patient/index.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/patterns/header-profile.png" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-1.png" for 192.168.1.6 at 2015-05-31 22:41:46 -0400
+
+
+Started GET "/assets/patterns/header-profile-skin-3.png" for 192.168.1.6 at 2015-05-31 22:41:46 -0400

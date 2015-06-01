@@ -19,7 +19,7 @@ nav class="navbar-default navbar-static-side" role="navigation" style="z-index:9
               == button_to "Log out", destroy_user_session_path, :method => :delete, :class => "form-control", :style => "border:0; font-size:inherit"
         div class="logo-element"
           
-      li class="#{'active' if current_page?('/')}"
+      li class=is_active_controller('home')
         == link_to "/" do
           i class="fa fa-line-chart"
           span class="nav-label" Home
@@ -28,6 +28,20 @@ nav class="navbar-default navbar-static-side" role="navigation" style="z-index:9
         == link_to "/home/minor" do
           i class="fa fa-user-md"
           span class="nav-label" Medication
+      li class="#{'active' if current_page?('/home/minor')}"
+        == link_to "/home/minor" do
+          i class="fa fa-envelope"
+          span class="nav-label" Mail
+      li class=is_active_controller('condition')
+        == link_to "#" do
+          i class="fa fa-sitemap"
+          span class="nav-label" Condition
+          span class="fa arrow"
+        ul class="nav nav-second-level collapse" aria-expanded="false"
+          li
+            == link_to "COPD", "/home/minor"
+          li
+            == link_to "Heart Disease", "/home/minor"
       li
         #datepicker
 
