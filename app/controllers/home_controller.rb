@@ -23,6 +23,12 @@ class HomeController < ApplicationController
   def minor
   end
 
+  def live_chat
+    respond_to do |format|
+      format.js
+    end 
+  end
+
   private
 
   def get_all_patient_data
