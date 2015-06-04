@@ -28,5 +28,6 @@ javascript:
   });
   socket.on('chat message', function(msg){
     $('#messages').prepend($('<div class="well">').text(msg));
-    $('#messages').prepend($('<strong>').text('Test'));
+    $('#messages').prepend($('<strong>').text('#{current_user.email}'));
   });
+
