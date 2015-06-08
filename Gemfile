@@ -25,6 +25,9 @@ gem 'turbolinks'
 
 # Include the jquery and ujs
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 
 # Test Performance Added by Tao Zhang For Testing

@@ -29,7 +29,24 @@ class HomeController < ApplicationController
     end 
   end
 
+  def search_anything
+    search_results = []
+    s = User.search { fulltext params["top_search"] } 
+    s.results.each do |r|
+      search_results.push({label: 'Email:'+r.email, value: 'users'+r.id.to_s})
+    end 
+    return_json search_results
+  end 
+
   private
+
+  def return_json(result)
+    respond_to do |format| 
+      format.json {
+        render json: result
+      }
+    end
+  end 
 
   def get_all_patient_data
     begin

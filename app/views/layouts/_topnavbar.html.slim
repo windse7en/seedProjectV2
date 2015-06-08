@@ -6,7 +6,7 @@ div class="row border-bottom"
       
       form role="search" class="navbar-form-custom" method="post" action="/"
         div class="form-group"
-          input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search" 
+          input type="text" placeholder="Search for something..." class="form-control ui-autocomplete-input" autocomplete="on" name="[top_search]" id="top_search" 
 
     ul class="nav navbar-top-links navbar-right" style="padding-top:17px"
       - if user_signed_in?
@@ -23,4 +23,4 @@ div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby=
 
 
 = render "layouts/config_box"
-= javascript_include_tag "config_box.js"
+= javascript_include_tag "config_box.js", "top_search"
