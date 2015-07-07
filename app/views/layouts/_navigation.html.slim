@@ -52,6 +52,6 @@ nav class="navbar-default navbar-static-side" role="navigation" style="z-index:9
 coffee:
   $("#datepicker").datepicker()
 
-- if !current_user.role.nil? and current_user.role.downcase == 'patient'and @show_tour == true
+- if !current_user.role.nil? and current_user.role.downcase == 'patient' and @show_tour == true
   div
     == render "layouts/website_tour"
