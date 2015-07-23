@@ -20,14 +20,7 @@ css:
 div class="row"
   div class="col-md-3 col-md-offset-6" id="health_index_line_chart" style="padding-top:15%; padding-left:15%"
     div class="middle-box text-center loginscreen  animated fadeInDown "
-      div
-        div 
-          /h1 class="logo-name" EF
-          = image_tag("/img/logo.png") 
-
-      h3 Welcome to Cusomer Health Index
-      p Perfectly analysis and presentation tools
-      p Login in. To Try it.
+      = render 'devise/partial/homepage_head' 
 
       == form_for(resource, as: resource_name, url: session_path(resource_name), class: "m-t", role: "form") do |f|
         div class="form-group"

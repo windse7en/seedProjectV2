@@ -7,6 +7,8 @@ gem "font-awesome-rails"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.10'
+# Use mysql as the database for Active Record
+gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -27,6 +29,7 @@ gem 'turbolinks'
 # Include the jquery and ujs
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+
 
 
 # Test Performance Added by Tao Zhang For Testing
