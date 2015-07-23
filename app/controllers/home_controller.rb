@@ -7,6 +7,8 @@ class HomeController < ApplicationController
       if (current_user.role != nil && !current_user.role.empty?)
         @result = get_all_patient_data
         @show_tour = false
+        @patient_score = current_user.patient.patient_score.first
+        gon.patient_score = @patient_score
         render current_user.role+'_index', result: @result
       else
         render 'index'

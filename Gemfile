@@ -31,6 +31,9 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
 
+# Get data to js
+gem 'gon'
+gem 'rabl-rails'
 
 # Test Performance Added by Tao Zhang For Testing
 gem 'rack-mini-profiler'
