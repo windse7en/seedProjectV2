@@ -11,6 +11,7 @@ root to: 'home#index'
   get "home/register"
   get "home/live_chat"
   get "home/search_anything"
+  get "home/get_patient_vitals"
   get '/auth/linkedin/callback', to: 'sessions#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

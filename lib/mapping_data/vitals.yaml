@@ -1,0 +1,22 @@
+fname                     : fname
+lname                     : lname
+dob                       : dob
+age                       : age
+gender                    : gender
+zipcode                   : zipcode
+income                    : income
+home_owner                : home_owner
+education_levl            : education_levl
+race                      : race
+air_quality               : air_quality
+water_quality             : water_quality
+smoker                    : smoker
+tobacco_quantity_per_week : tobacco_quantity_per_week
+alcohol_beverages_weekly  : alcohol_beverages_weekly
+hours_of_exercise_weekly  : hours_of_exercise_weekly
+daily_calories            : daily_calories
+daily_sugar_intake        : daily_sugar_intake
+daily_fat_intake          : daily_fat_intake
+car_owner                 : car_owner
+child_had                 : child_had
+

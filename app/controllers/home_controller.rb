@@ -1,4 +1,10 @@
 class HomeController < ApplicationController
+  attr_reader :vitals_mapping
+
+  def initialize
+    super
+    @vitals_mapping = YAML.load_file 'lib/mapping_data/vitals.yaml'
+  end 
 
   def index
     @mainTitle = "Welcome in Inspinia Rails Seed Project"
@@ -39,12 +45,40 @@ class HomeController < ApplicationController
     return_json search_results
   end 
 
+  def get_patient_vitals
+    permitted = params.permit(:id)
+    if !permitted.empty?
+      begin 
+        u = User.find(params[:id])
+        p = Patient.find(u.patient_id)
+        results = {}
+        vitals_mapping.each do |i, v|
+          next if check_attr_return instance: u, hash: results, attr_database: i, attr_custom: v
+          next if check_attr_return instance: p, hash: results, attr_database: i, attr_custom: v
+          raise "#{i} not in #{u.class}, #{p.class}"
+        end 
+      rescue Exception => e
+        return return_json e.message
+      end 
+      return_json results
+    else
+      return_json "Error: Please set the id"
+    end 
+  end 
+
   private
+
+  def check_attr_return(*args)
+    checked_instance, attr, name, hash_result = args[0][:instance], args[0][:attr_database], args[0][:attr_custom], args[0][:hash]
+    return false unless checked_instance.respond_to? attr
+    hash_result[name] = checked_instance.public_send attr
+    true
+  end
 
   def return_json(result)
     respond_to do |format| 
       format.json {
-        render json: result
+        render json: result.to_json
       }
     end
   end 
