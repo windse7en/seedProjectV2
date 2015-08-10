@@ -49,6 +49,12 @@ class HomeController < ApplicationController
     return_json search_results
   end 
 
+  def update_patient_score
+    require "#{Rails.root}/lib/runtime/score_engine/score_calculation"
+    ScoreCalculation.new(current_user.id).insert_whole_score
+    redirect_to action: "index"
+  end 
+
   def get_patient_vitals
     permitted = params.permit(:id)
     if !permitted.empty?

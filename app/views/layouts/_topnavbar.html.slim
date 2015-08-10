@@ -13,6 +13,8 @@ div class="row border-bottom"
         li 
           == button_to "LiveChat", "/home/live_chat", :method => :get, :class => "form-control", :style => "border:0", :remote => true
         li 
+          == button_to "Update Score", "/home/update_patient_score", :method => :get, :class => "form-control", :style => "border:0"
+        li 
           == button_to "Password", edit_user_registration_path, :method => :get, :class => "form-control", :style => "border:0"
         li
           == button_to "Log out", destroy_user_session_path, :method => :delete, :class => "form-control", :style => "border:0"

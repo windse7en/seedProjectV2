@@ -8,6 +8,7 @@ root to: 'home#index'
   get "home/minor"
   get "home/vitals"
   get "home/login"
+  get "home/update_patient_score"
   get "home/register"
   get "home/live_chat"
   get "home/search_anything"
