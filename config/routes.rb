@@ -1,5 +1,4 @@
 Myapp::Application.routes.draw do
-
 root to: 'home#index'
 
   get "angular/index"
@@ -7,6 +6,7 @@ root to: 'home#index'
 
   get "home/index"
   get "home/minor"
+  get "home/vitals"
   get "home/login"
   get "home/register"
   get "home/live_chat"

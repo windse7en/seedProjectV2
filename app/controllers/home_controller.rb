@@ -13,7 +13,7 @@ class HomeController < ApplicationController
       if (current_user.role != nil && !current_user.role.empty?)
         @result = get_all_patient_data
         @show_tour = false
-        @patient_score = current_user.patient.patient_score.first
+        @patient_score = current_user.patient.patient_score.first unless current_user.patient.nil?
         gon.patient_score = @patient_score
         render current_user.role+'_index', result: @result
       else
@@ -29,6 +29,10 @@ class HomeController < ApplicationController
 
   def minor
   end
+
+  def vitals
+    @results = show_vitals(current_user, current_user.patient)
+  end 
 
   def live_chat
     respond_to do |format|
@@ -50,13 +54,8 @@ class HomeController < ApplicationController
     if !permitted.empty?
       begin 
         u = User.find(params[:id])
-        p = Patient.find(u.patient_id)
-        results = {}
-        vitals_mapping.each do |i, v|
-          next if check_attr_return instance: u, hash: results, attr_database: i, attr_custom: v
-          next if check_attr_return instance: p, hash: results, attr_database: i, attr_custom: v
-          raise "#{i} not in #{u.class}, #{p.class}"
-        end 
+        p = u.patient
+        results = show_vitals(u, p)
       rescue Exception => e
         return return_json e.message
       end 
@@ -67,6 +66,16 @@ class HomeController < ApplicationController
   end 
 
   private
+
+  def show_vitals(u, p)
+    results = {}
+    vitals_mapping.each do |i, v|
+      next if check_attr_return instance: u, hash: results, attr_database: i, attr_custom: v
+      next if check_attr_return instance: p, hash: results, attr_database: i, attr_custom: v
+      raise "#{i} not in #{u.class}, #{p.class}"
+    end 
+    results
+  end 
 
   def check_attr_return(*args)
     checked_instance, attr, name, hash_result = args[0][:instance], args[0][:attr_database], args[0][:attr_custom], args[0][:hash]

@@ -1,0 +1,20 @@
+.wrapper.wrapper-content.animated.fadeInRight
+  .row
+    .col-lg-12
+      .text-center.m-t-lg
+        h1
+          |  Vitals Views
+
+div class="wrapper wrapper-content animated fadeInRight"
+  div class="row" id="sortable-view"
+    div
+      div class="ibox float-e-margins" id="whole_score" data-toggle="tooltip" data-placement="bottom" data-original-title="Your health index"
+        div class="ibox-title"
+          h5 Vitals Form
+
+        div class="ibox-content"
+          - @results.each do |k, v|
+            div class="row"
+              label = "#{k} : "
+              input placeholder="#{v}"
+

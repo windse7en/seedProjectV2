@@ -80,7 +80,7 @@ class ScoreCalculation
       factors[5]["sens_factor"] * p.sens_overall
 
     p.updated_by = Time.now
-    #p.save
+    p.save
     result_final
 	end
 

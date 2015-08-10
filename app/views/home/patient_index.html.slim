@@ -52,39 +52,39 @@ div class="row border-bottom white-bg dashboard-header"
 div class="wrapper wrapper-content animated fadeInRight"
   div class="row" id="sortable-view"
     div class="col-md-3 ui-sortable"
-      
-      div class="ibox float-e-margins" id="whole_score" data-toggle="tooltip" data-placement="bottom" data-original-title="Your health index"
-        div class="ibox-title"
-          span class="label label-info pull-right"
-            | #{@patient_score[:updated_by].strftime("%b,%d %Y")}
-          h5 
-            | My Health Index
-        div class="ibox-content"
-          div class="text-left"
-            h1 
-              | #{@patient_score[:overall_score]}
-          div class="stat-percent font-bold "
-            | 17%
-            i class="fa fa-level-up" style="color:green"
+      - unless @patient_score.nil?
+        div class="ibox float-e-margins" id="whole_score" data-toggle="tooltip" data-placement="bottom" data-original-title="Your health index"
+          div class="ibox-title"
+            span class="label label-info pull-right"
+              | #{@patient_score[:updated_by].strftime("%b,%d %Y")}
+            h5 
+              | My Health Index
+          div class="ibox-content"
+            div class="text-left"
+              h1 
+                | #{@patient_score[:overall_score]}
+            div class="stat-percent font-bold "
+              | 17%
+              i class="fa fa-level-up" style="color:green"
 
-      div class="ibox float-e-margins hide " id="score_detail"
-        div class="ibox-title"
-          h5
-            | Patient Scores
-          div class="ibox-tools"
-            a class="collapse-link" id="score_detail_collapse-link"
-              i class="fa fa-chevron-down"
-            a class="close-link"
-              i class="fa fa-times"
-        div class="ibox-content" style="display:none"
-          div id='my_health_index' data-toggle="tooltip" data-placement="top" data-original-title="Your health index"
-          - score_mapping(@patient_score). each do |e|
-            div
-              | #{e[0]}
-              small class="pull-right" #{e[1]}/100
-              div class="progress progress-small"
-                div style="width: #{e[1]}%;" class="progress-bar #{score_warning(e[1])}"
-        
+        div class="ibox float-e-margins hide " id="score_detail"
+          div class="ibox-title"
+            h5
+              | Patient Scores
+            div class="ibox-tools"
+              a class="collapse-link" id="score_detail_collapse-link"
+                i class="fa fa-chevron-down"
+              a class="close-link"
+                i class="fa fa-times"
+          div class="ibox-content" style="display:none"
+            div id='my_health_index' data-toggle="tooltip" data-placement="top" data-original-title="Your health index"
+            - score_mapping(@patient_score). each do |e|
+              div
+                | #{e[0]}
+                small class="pull-right" #{e[1]}/100
+                div class="progress progress-small"
+                  div style="width: #{e[1]}%;" class="progress-bar #{score_warning(e[1])}"
+          
     div class="col-md-6 ui-sortable" id="line_chart"
       div class="ibox float-e-margins"
         div class="ibox-title"
