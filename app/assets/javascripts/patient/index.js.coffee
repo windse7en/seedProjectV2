@@ -30,18 +30,8 @@ polarOptions = {
 }
 
 lineData = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: gon.score_histories.month,
     datasets: [
-        {
-            label: "Example dataset",
-            fillColor: "rgba(220,220,220,0.5)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 80, 81, 56, 55, 40]
-        },
         {
             label: "Example dataset",
             fillColor: "rgba(26,179,148,0.5)",
@@ -50,7 +40,7 @@ lineData = {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(26,179,148,1)",
-            data: [28, 48, 40, 19, 86, 27, 90]
+            data: gon.score_histories.data
         }
     ]
 }
@@ -95,8 +85,13 @@ doughnutOptions = {
     animateRotate: true,
     animateScale: false,
 }
+
+if(typeof(gon.vitals)=='undefined') 
+    gon.vitals = []
+    console.log("no vitals loaded")
+
 radarData = {
-    labels: ["BMI", "Blood Pressure", "Blood Sugar", "Exercise&Diet", "Disease", "Smoke", "Drink"],
+    labels: ["Air Quality", "Sugar Intake", "Calories Intake", "Fat Intake", "Exercise", "Smoke", "Alcohol"],
     datasets: [
         {
             label: "My First dataset",
@@ -106,7 +101,7 @@ radarData = {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [65, 59, 90, 81, 56, 55, 40]
+            data: [90, 60, 70, 75, 60, 55, 45]
         },
         {
             label: "My Second dataset",
@@ -116,10 +111,10 @@ radarData = {
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [28, 48, 40, 19, 96, 27, 100]
+            data: gon.vitals
         }
     ]
-};
+}
 
 radarOptions = {
     scaleShowLine: true,

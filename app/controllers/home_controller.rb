@@ -13,8 +13,24 @@ class HomeController < ApplicationController
       if (current_user.role != nil && !current_user.role.empty?)
         @result = get_all_patient_data
         @show_tour = false
-        @patient_score = current_user.patient.patient_score.first unless current_user.patient.nil?
-        gon.patient_score = @patient_score
+        @patient_score = current_user.patient.patient_score.last unless current_user.patient.nil?
+
+        gon.patient_score, vital_results = @patient_score, self.vitals
+        gon.vitals = [normalize_by_range(vital_results["air_quality"], 500), 
+          normalize_by_range(vital_results["daily_sugar_intake"], 1000), 
+          normalize_by_range(vital_results["daily_calories"], 3000), 
+          normalize_by_range(vital_results["daily_fat_intake"], 1000), 
+          normalize_by_range(vital_results["hours_of_exercise_weekly"], 28), 
+          normalize_by_range(vital_results["tobacco_quantity_per_week"], 100), 
+          normalize_by_range(vital_results["alcohol_beverages_weekly"], 20) 
+        ]
+
+        gon.score_histories = {'month'=>[], 'data'=>[]}
+        current_user.patient.patient_score.first(10).each do |ps|
+          gon.score_histories['month'].push ps['updated_by'].strftime("%Y %^b")
+          gon.score_histories['data'].push ps['overall_score']
+        end 
+
         render current_user.role+'_index', result: @result
       else
         render 'index'
@@ -40,14 +56,14 @@ class HomeController < ApplicationController
     end 
   end
 
-  def search_anything
-    search_results = []
-    s = User.search { fulltext params["top_search"] } 
-    s.results.each do |r|
-      search_results.push({label: 'Email:'+r.email, value: 'users'+r.id.to_s})
-    end 
-    return_json search_results
-  end 
+  #def search_anything
+    #search_results = []
+    #s = User.search { fulltext params["top_search"] } 
+    #s.results.each do |r|
+      #search_results.push({label: 'Email:'+r.email, value: 'users'+r.id.to_s})
+    #end 
+    #return_json search_results
+  #end 
 
   def update_patient_score
     require "#{Rails.root}/lib/runtime/score_engine/score_calculation"
@@ -72,6 +88,10 @@ class HomeController < ApplicationController
   end 
 
   private
+
+  def normalize_by_range(float, max)
+    (float.to_f/max*100).to_i
+  end 
 
   def show_vitals(u, p)
     results = {}
